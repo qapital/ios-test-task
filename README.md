@@ -1,5 +1,5 @@
 #iOS Test Task
-The test task involves writing a simplified version of the users list of savings goals, the list that the user sees when opening the app. This list should be displayed as the provided psd shows. When tapping a goal there should be a transition to a fullscreen display of the goal image. How you decide to do this transition is up to you.
+The test task involves writing a simplified version of the users list of savings goals, the list that the user sees when opening the app. This list should be displayed as the provided psd shows. Each goal has one entry in the list displaying the goals image, a optional target amount and how much has been saved. Goals can also be shared with other users in the system. In this case the goal will have a list of connected users and these should be displayed as well. When tapping a goal there should be a transition to a fullscreen display of the goal image. How you decide to do this transition is up to you.
 
 ##Implementation
 We provide you with a simplified API to get the list of goals to display and information about them. The API does not require any login. How you implement this and what external libraries you use are entirely up to you. Whats important to us is that the app is smooth and that scrolling does not have any stuttering.
@@ -22,7 +22,7 @@ This call will return an object with one key, savingsGoals. This key maps to a l
 | status         | String    | If this goal is active or deleted. A string that is either "active" or "deleted" |
 | name           | String    | Name of the goal |
 | id             | Int       | Unique id of the goal |
-| connectedUsers | List<Int> | A list of user ids that are connected to this goal |
+| connectedUsers | List<Int> | A list of user ids that this goal is shared with. |
 
 ####/users/:id
 This resource will return a user object for a spcific id. The user object has the following fields:
