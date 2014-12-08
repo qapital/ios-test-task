@@ -1,11 +1,14 @@
 #iOS Test Task
-The test task involves writing a simplified version of the users list of savings goals, the list that the user sees when opening the app. This list should be displayed as the porivided psd shows. When tapping a goal there should be a transition to a fullscreen display of the goal image. How you decide to do this transition is up to you.
+The test task involves writing a simplified version of the users list of savings goals, the list that the user sees when opening the app. This list should be displayed as the provided psd shows. When tapping a goal there should be a transition to a fullscreen display of the goal image. How you decide to do this transition is up to you.
 
 ##Implementation
-We provide you with a simplified API to get the list of goals to display and information about them. How you implement this and what external libraries you use are entirely up to you. Whats important to us is that the app is smooth and that scrolling does not have any stuttering.
+We provide you with a simplified API to get the list of goals to display and information about them. The API does not require any login. How you implement this and what external libraries you use are entirely up to you. Whats important to us is that the app is smooth and that scrolling does not have any stuttering.
 
 
-The following API calls are available:
+The following API is available:
+
+####Endpoint
+http://qapital-ios-testtask.herokuapp.com
 
 ####/savingsgoals
 This call will return an object with one key, savingsGoals. This key maps to a list of goal objects with the following fields:
@@ -31,5 +34,4 @@ This resource will return a user object for a spcific id. The user object has th
 | avatarUrl      | String | URL where the users avatar can be downloaded from |
 
 ##Design
-=============
 There is a psd available in the repo with how we would like you to display this list. The needed fonts are available as well.
