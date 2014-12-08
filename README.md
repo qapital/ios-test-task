@@ -1,5 +1,5 @@
 #iOS Test Task
-The test task involves writing a simplified version of the users list of savings goals, the list that the user sees when opening the app. This list should be displayed as the provided psd shows. Each goal has one entry in the list displaying the goals image, a optional target amount and how much has been saved. Goals can also be shared with other users in the system. In this case the goal will have a list of connected users and these should be displayed as well. 
+The test task involves writing a simplified version of the user's list of savings goals, the list that the user sees when opening the app. This list should be displayed as the provided psd shows. Each goal has one entry in the list displaying the goals image, an optional target amount and how much has been saved. Goals can also be shared with other users in the system. In this case the goal will have a list of connected users and these should be displayed as well. 
 
 When tapping a goal there should be a transition to a fullscreen display of the goal image. How you decide to do this transition is up to you.
 
@@ -13,7 +13,7 @@ The following API is available:
 http://qapital-ios-testtask.herokuapp.com
 
 ####/savingsgoals
-This call will return an object with one key, savingsGoals. This key maps to a list of goal objects with the following fields:
+This resource will return an object with one key, savingsGoals. This key maps to a list of goal objects with the following fields:
 
 | Field          | Type	     | Description |
 | -------------- | --------- | ----------- |
@@ -27,7 +27,7 @@ This call will return an object with one key, savingsGoals. This key maps to a l
 | connectedUsers | List<Int> | A list of user ids that this goal is shared with. |
 
 ####/users/:id
-This resource will return a user object for a spcific id. The user object has the following fields:
+This resource will return a user object for a specific id. The user object has the following fields:
 
 | Field          | Type   | Description |
 | -------------- | ------ | ----------- |
