@@ -35,5 +35,11 @@ This resource will return a user object for a specific id. The user object has t
 | displayName    | String | Display name of user |
 | avatarUrl      | String | URL where the users avatar can be downloaded from |
 
+##Testing
+You should add at least some simple tests. At what level and how much of the app you test is up to you but please reason around the decisions you made.
+
 ##Design
 There is a psd available in the repo with how we would like you to display this list. The needed fonts are available as well.
+
+##Submiting
+Just send us your code along with a description on how to run the app and the tests. If there is anything that you have not had time to complete or intentionally left out please reason on how you would implement it or why it was left out.
