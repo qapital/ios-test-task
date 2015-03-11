@@ -26,6 +26,35 @@ This resource will return an object with one key, savingsGoals. This key maps to
 | id             | Int       | Unique id of the goal |
 | connectedUsers | List<Int> | A list of user ids that this goal is shared with. |
 
+####/savingsgoals/:id/feed
+This resource will return an object with on key, feed. It contains various events that have happened on the goal, with relations to objects that have triggered them.
+
+| Field       | Type      | Description |
+| ----------- | --------- | ----------- |
+| id          | String    | Unique id of the feed item |
+| type        | String    | Describes the type of feed item. "saving" is the only allowed value. |
+| timestamp   | timestamp | When the item occured. Format: 2015-03-10T14:55:16.025Z |
+| message     | String    | A text (with html style elements) describing the item, to be displayed to the user |
+| amount      | Float     | The amount saved to the goal |
+| userId      | Int       | Id of the user that created the event, may be different from the user of the goal |
+| savingsRule | Object    | Object describing the rule that created the event, if it exists. See description below |
+
+##### SavingsRule Object in Feed
+
+| Field       | Type      | Description |
+| ----------- | --------- | ----------- |
+| id          | Int       | Id of the rule. Only given if the rule belongs to the user of the goal |
+| type        | String    | Describes the type of the rule. Allowed values: roundup, guilty_pleasure |
+
+####/savingsrules
+This resource will return an object with one key: savingsRules. The key maps to list of rule objects with the following fields:
+
+| Field       | Type      | Description |
+| ----------- | --------- | ----------- |
+| id          | Int       | Unique id of the rule item |
+| type        | String    | Describes the type of the rule. Allowed values: roundup, guilty_pleasure |
+| amount      | Float     | Describes how much the rule will save. If the type is roundup, what amount should be rounded up to, otherwise how much will be saved. |
+
 ####/users/:id
 This resource will return a user object for a specific id. The user object has the following fields:
 
