@@ -29,22 +29,15 @@ This resource will return an object with one key, savingsGoals. This key maps to
 ####/savingsgoals/:id/feed
 This resource will return an object with on key, feed. It contains various events that have happened on the goal, with relations to objects that have triggered them.
 
-| Field       | Type      | Description |
-| ----------- | --------- | ----------- |
-| id          | String    | Unique id of the feed item |
-| type        | String    | Describes the type of feed item. "saving" is the only allowed value. |
-| timestamp   | timestamp | When the item occured. Format: 2015-03-10T14:55:16.025Z |
-| message     | String    | A text (with html style elements) describing the item, to be displayed to the user |
-| amount      | Float     | The amount saved to the goal |
-| userId      | Int       | Id of the user that created the event, may be different from the user of the goal |
-| savingsRule | Object    | Object describing the rule that created the event, if it exists. See description below |
-
-##### SavingsRule Object in Feed
-
-| Field       | Type      | Description |
-| ----------- | --------- | ----------- |
-| id          | Int       | Id of the rule. Only given if the rule belongs to the user of the goal |
-| type        | String    | Describes the type of the rule. Allowed values: roundup, guilty_pleasure |
+| Field         | Type      | Description |
+| ------------- | --------- | ----------- |
+| id            | String    | Unique id of the feed item |
+| type          | String    | Describes the type of feed item. "saving" is the only allowed value. |
+| timestamp     | timestamp | When the item occured. Format: 2015-03-10T14:55:16.025Z |
+| message       | String    | A text (with html style elements) describing the item, to be displayed to the user |
+| amount        | Float     | The amount saved to the goal |
+| userId        | Int       | Id of the user that created the event, may be different from the user of the goal |
+| savingsRuleId | Object    | Id of the rule that created the event, if it exists. See description below |
 
 ####/savingsrules
 This resource will return an object with one key: savingsRules. The key maps to list of rule objects with the following fields:
