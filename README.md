@@ -25,7 +25,7 @@ http://qapital-ios-testtask.herokuapp.com
 http://qapital-ios-testtask.herokuapp.com/activities?from=<date>&to=<date>
 ```
 
-Where the two dates should be of the format YYYY-MM-DDThh:mm:ss+00:00. This will fetch all activities that happened between from and to. The return format is a JSON object that holds the list of activities under the key "activities" and a date indicating what is the earliest date there is an activity for under the key "oldest". The activities contain a message that has a number of words marked with <strong> that should be bolded. The amount is in dollars. The user id can be used to fetch a user from the users endpoint.
+Where the two dates should be of the format YYYY-MM-DDThh:mm:ss+00:00. This will fetch all activities that happened between from and to. The return format is a JSON object that holds the list of activities under the key "activities" and a date indicating what is the earliest date there is an activity for under the key "oldest". The activities contain a message that has a number of words marked with `<strong>` that should be bolded. The amount is in dollars. The user id can be used to fetch a user from the users endpoint.
 ```json
 {
 	"oldest": : "2016-05-23T00:00:00+00:00",
