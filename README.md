@@ -1,14 +1,14 @@
-#iOS Test Task
+# iOS Test Task
 The test task is to implement a simplified version of our activity feed. The feed should implement fetch as you scroll with a page size of two weeks at a time. If you don't receive any events within that time period you should fetch the next period until you get some events or you reach the oldest activity. The zip contains a Sketch file with the design in 2x. If you don’t have Sketch there is also a PDF attached that could be used.  
 
 When tapping a goal there should be a transition to the provided goal screen with the goals activities displayed. How you make this transition is up to you.
 
-##Important
+## Important
 When you receive this task please estimate how long you will need to complete the task and when you will hand it in to us and reply to us as soon as possible. These two times do not have to be the same. You could for example decide that you need 20 hours to complete the task but because you are busy during the next few days you will not hand it in until next week. While completing the assignment write down how long it took. It it took longer than expected please reflect a bit about why when handing it in. Also, please respect the final due date that you have set.
 
 Apart from implementing the actual view controller we would also like to see some kind of tests. Things that we look for in the code are reusability, testability and attention to detail when it comes to design.
 
-##Submiting
+## Submiting
 Just send us your code along with a description on how to run the app and the tests. If there is anything that you have not had time to complete or intentionally left out please reason on how you would implement it or why it was left out.
 
 ##Implementation
@@ -17,10 +17,10 @@ We provide you with a simplified API to get the list of activities and informati
 
 The following API is available:
 
-####Endpoint
+#### Endpoint
 http://qapital-ios-testtask.herokuapp.com
 
-####Fetch activities:
+#### Fetch activities:
 ```
 http://qapital-ios-testtask.herokuapp.com/activities?from=<date>&to=<date>
 ```
@@ -46,7 +46,7 @@ Where the two dates should be of the format YYYY-MM-DDThh:mm:ss+00:00. This will
 }
 ```
 
-####Fetch a user:
+#### Fetch a user:
 ```
 http://qapital-ios-testtask.herokuapp.com/users/<id>
 ```
