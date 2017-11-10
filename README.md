@@ -11,7 +11,7 @@ Apart from implementing the actual view controller we would also like to see som
 ## Submiting
 Just send us your code along with a description on how to run the app and the tests. If there is anything that you have not had time to complete or intentionally left out please reason on how you would implement it or why it was left out.
 
-##Implementation
+## Implementation
 We provide you with a simplified API to get the list of activities and information about them. The API does not require any login. How you implement this and what external libraries you use are entirely up to you. Whats important to us is that the app is smooth and that scrolling does not have any stuttering.
 
 
