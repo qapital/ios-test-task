@@ -1,10 +1,10 @@
 # iOS Test Task
-The test task is to implement a simplified version of our activity feed. The feed should implement fetch as you scroll with a page size of two weeks at a time. If you don't receive any events within that time period you should fetch the next period until you get some events or you reach the oldest activity. The zip contains a Sketch file with the design in 2x. If you don’t have Sketch there is also a PDF attached that could be used.  
+The test task is to implement a simplified version of our activity feed. The feed should implement fetch as you scroll with a page size of two weeks at a time. If you don't receive any events within that time period you should fetch the next period until you get some events or you reach the oldest activity. The zip contains a Sketch file with the design in 2x.
 
 When tapping a goal there should be a transition to the provided goal screen with the goals activities displayed. How you make this transition is up to you.
 
 ## Important
-When you receive this task please estimate how long you will need to complete the task and when you will hand it in to us and reply to us as soon as possible. These two times do not have to be the same. You could for example decide that you need 20 hours to complete the task but because you are busy during the next few days you will not hand it in until next week. While completing the assignment write down how long it took. It it took longer than expected please reflect a bit about why when handing it in. Also, please respect the final due date that you have set.
+When you receive this task please estimate how long you will need to complete the task and when you will hand it in to us and reply to us as soon as possible. These two times do not have to be the same. You could for example decide that you need 20 hours to complete the task but because you are busy during the next few days you will not hand it in until next week. While completing the assignment write down how long it took. If it took longer than expected please reflect a bit about why when handing it in. Also, please respect the final due date that you have set.
 
 Apart from implementing the actual view controller we would also like to see some kind of tests. Things that we look for in the code are reusability, testability and attention to detail when it comes to design.
 
