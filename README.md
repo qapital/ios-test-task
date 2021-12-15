@@ -7,6 +7,12 @@ The test task is to implement a simplified version of our activity feed. The fee
 ## Important
 When you receive this task please estimate how long you will need to complete the task and when you will hand it in to us and reply to us as soon as possible. These two times do not have to be the same. You could for example decide that you need 20 hours to complete the task but because you are busy during the next few days you will not hand it in until next week. While completing the assignment write down how long it took. If it took longer than expected please reflect a bit about why when handing it in. Also, please respect the final due date that you have set.
 
+Apart from implementing the actual view, here are a few pointers on what we are looking for:
+
+* Reusability and testability
+* Attention to detail when it comes to design
+* Some kind of tests
+
 While we don't require the solution to be perfect, we do expect it to be written in a professional manner. You should use this opportunity to show us what kind of code you would write if we were to employ you. **Furthermore, please take care in implementing the provided design.**
 
 ## Submitting
