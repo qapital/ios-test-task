@@ -1,7 +1,7 @@
 # iOS Test Task
 The test task is to implement a simplified version of our activity feed. The feed should implement fetch as you scroll with a page size of two weeks at a time. If you don't receive any events within that time period you should fetch the next period until you get some events or you reach the oldest activity. 
 
-* A Figma file with the design can be found here: https://www.figma.com/file/Q0v3ag0leOcw7IfitYCdj3/iOS-Task?node-id=0%3A1
+* A Figma file with the design can be found here: https://www.figma.com/file/Wvk9u2tO788Z8tojrxSIGh/iOS-Task?node-id=0%3A32
 * The fonts to use can be found in the `Fonts` folder in this repo
 
 ## Important
